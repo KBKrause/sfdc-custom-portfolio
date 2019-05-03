@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/salesforce-lightning-design-system.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="slds-tabs_default">
+    <ul class="slds-tabs_default__nav" role="tablist">
+      <li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation">
+        <a class="slds-tabs_default__link" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1"
+          id="tab-default-1__item" onclick="showTabOne();">Item One</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Item Two" role="presentation">
+        <a class="slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2"
+          id="tab-default-2__item" onclick="showTabTwo();">Projects</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Item Three" role="presentation" onclick="showTabThree();">
+        <a class=" slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3"
+          id="tab-default-3__item" onclick="showTabThree();">Item Three</a>
+      </li>
+    </ul>
+    <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel"
+      aria-labelledby="tab-default-1__item">Item One Content</div>
+    <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel"
+      aria-labelledby="tab-default-2__item"><img
+        src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
+      <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
+      <img src="https://img.icons8.com/color/48/000000/arduino.png" />Chemberry
+      <br />
+      <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" />AMBER14 Helper
+      <br />
+      <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+      <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+      <img src="https://img.icons8.com/color/48/000000/css3.png" />This Website!
+    </div>
+    <div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel"
+      aria-labelledby="tab-default-3__item"><img src="https://img.icons8.com/color/48/000000/gmail.png" /><br />
+      <img src="https://img.icons8.com/color/48/000000/linkedin.png" /><br />
+      <img src="https://img.icons8.com/material-rounded/48/000000/github.png" /><br />
+      <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+    </div>
+  </div>
+  Non-Salesforce icons provided by <a href="https://icons8.com/">icons8</a>
+</body>
+
+</html>
