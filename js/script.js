@@ -17,6 +17,8 @@ function showTabOne() {
     "class", "slds-tabs_default__content slds-hide");
   $("#tab-default-3").attr(
     "class", "slds-tabs_default__content slds-hide");
+
+  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
 }
 
 function showTabTwo() {
@@ -38,6 +40,8 @@ function showTabTwo() {
     "class", "slds-tabs_default__content slds-hide");
   $("#tab-default-3").attr(
     "class", "slds-tabs_default__content slds-hide");
+
+  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-100%)");
 }
 
 function showTabThree() {
@@ -59,6 +63,8 @@ function showTabThree() {
     "class", "slds-tabs_default__content slds-hide");
   $("#tab-default-2").attr(
     "class", "slds-tabs_default__content slds-hide");
+
+  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-200%)");
 }
 
 function selectCarouselOne() {
