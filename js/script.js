@@ -19,6 +19,7 @@ function showTabOne() {
     "class", "slds-tabs_default__content slds-hide");
 
   $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
+  selectCarouselOne();
 }
 
 function showTabTwo() {
@@ -42,6 +43,7 @@ function showTabTwo() {
     "class", "slds-tabs_default__content slds-hide");
 
   $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-100%)");
+  selectCarouselTwo();
 }
 
 function showTabThree() {
@@ -65,6 +67,7 @@ function showTabThree() {
     "class", "slds-tabs_default__content slds-hide");
 
   $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-200%)");
+  selectCarouselThree();
 }
 
 function selectCarouselOne() {
@@ -82,8 +85,6 @@ function selectCarouselOne() {
   $("#content-id-03").children().eq(0).attr("tabindex", "-1");
   $("#indicator-id-03").attr("class", "slds-carousel__indicator-action");
   $("#indicator-id-03").attr("tabindex", "-1");
-
-  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
 }
 
 function selectCarouselTwo() {
@@ -101,8 +102,6 @@ function selectCarouselTwo() {
   $("#content-id-03").children().eq(0).attr("tabindex", "-1");
   $("#indicator-id-03").attr("class", "slds-carousel__indicator-action");
   $("#indicator-id-03").attr("tabindex", "-1");
-
-  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-100%)");
 }
 
 function selectCarouselThree() {
@@ -120,8 +119,6 @@ function selectCarouselThree() {
   $("#content-id-03").children().eq(0).attr("tabindex", "0");
   $("#indicator-id-03").attr("class", "slds-carousel__indicator-action slds-is-active");
   $("#indicator-id-03").attr("tabindex", "0");
-
-  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-200%)");
 }
 
 function autoplay() {

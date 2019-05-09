@@ -4,10 +4,28 @@
   <link rel="stylesheet" href="css/salesforce-lightning-design-system.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
-  <div class="slds-carousel">
+  <div class="slds-tabs_default">
+    <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
+      <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
+        <a class="slds-tabs_default__link" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1"
+          id="tab-default-1__item" onclick="showTabOne();">ABOUT</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Projects" role="presentation">
+        <a class="slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2"
+          id="tab-default-2__item" onclick="showTabTwo();">PROJECTS</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Contact" role="presentation">
+        <a class=" slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3"
+          id="tab-default-3__item" onclick="showTabThree();">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slds-carousel" style="height:500px">
     <div class="slds-carousel__stage">
       <span class="slds-carousel__autoplay">
         <button id="CAROUSEL_AUTOPLAY" onclick="autoplay();"
@@ -27,8 +45,72 @@
               <img src="/assets/images/carousel/carousel-01.jpg" alt="Visit App Exchange" />
             </div>
             <div class="slds-carousel__content">
-              <h2 class="slds-carousel__content-title">Visit App Exchange</h2>
-              <p>Extend Salesforce with the #1 business marketplace.</p>
+              <article class="slds-card" style="height:400px">
+                <div class="slds-card__body slds-card__body_inner">
+                  <ul class="slds-grid slds-wrap slds-grid_pull-padded">
+                    <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
+                      <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
+                        <div class="slds-media__body">
+                          <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                            <h1 class="slds-tile__title slds-truncate slds-text-title_caps"
+                              title="Related Record Title 1" style="font-size:20px">
+                              About Me
+                            </h1>
+                          </div>
+                          <div class="slds-tile__detail">
+                            <dl class="slds-list_horizontal slds-wrap">
+                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
+                                Label:
+                              </dt>
+                              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description
+                                for
+                                first label</dd>
+                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
+                                Label:
+                              </dt>
+                              <dd class="slds-item_detail slds-truncate" title="Description for second label">
+                                Description
+                                for
+                                second label</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
+                      <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
+                        <div class="slds-media__body">
+                          <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                            <h1 class="slds-tile__title slds-truncate slds-text-title_caps"
+                              title="Related Record Title 1" style="font-size:20px">
+                              Interests
+                            </h1>
+                          </div>
+                          <div class="slds-tile__detail">
+                            <dl class="slds-list_horizontal slds-wrap">
+                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
+                                Label:
+                              </dt>
+                              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description
+                                for
+                                first label</dd>
+                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
+                                Label:
+                              </dt>
+                              <dd class="slds-item_detail slds-truncate" title="Description for second label">
+                                Description
+                                for
+                                second label</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="slds-card__footer">
+                </footer>
+              </article>
             </div>
           </a>
         </div>
@@ -39,8 +121,17 @@
               <img src="/assets/images/carousel/carousel-02.jpg" alt="Click to Customize" />
             </div>
             <div class="slds-carousel__content">
-              <h2 class="slds-carousel__content-title">Click to Customize</h2>
-              <p>Use the Object Manager to add fields, build layouts, and more.</p>
+              <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
+              <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
+              <img src="https://img.icons8.com/color/48/000000/arduino.png" />Chemberry
+              <br />
+              <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" />AMBER14 Helper
+              <br />
+              <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+              <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+              <img src="https://img.icons8.com/color/48/000000/css3.png" />
+              <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+              <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" />This Website!
             </div>
           </a>
         </div>
@@ -51,8 +142,20 @@
               <img src="/assets/images/carousel/carousel-03.jpg" alt="Download SalesforceA" />
             </div>
             <div class="slds-carousel__content">
-              <h2 class="slds-carousel__content-title">Download SalesforceA</h2>
-              <p>Get the mobile app that&#x27;s just for Salesforce admins.</p>
+              <div class="slds-align_absolute-center">
+                <a href="mailto:kevbkraus@gmail.com">
+                  <img src="https://img.icons8.com/color/100/000000/gmail.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
+                  <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
+                </a>
+                <a href="https://github.com/KBKrause">
+                  <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
+                </a>
+                <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
+                  <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
+                </a>
+              </div>
             </div>
           </a>
         </div>
@@ -83,121 +186,9 @@
     </div>
   </div>
 
-  <div class="slds-tabs_default">
-    <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
-      <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
-        <a class="slds-tabs_default__link" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1"
-          id="tab-default-1__item" onclick="showTabOne();">ABOUT</a>
-      </li>
-      <li class="slds-tabs_default__item" title="Projects" role="presentation">
-        <a class="slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2"
-          id="tab-default-2__item" onclick="showTabTwo();">PROJECTS</a>
-      </li>
-      <li class="slds-tabs_default__item" title="Contact" role="presentation">
-        <a class=" slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3"
-          id="tab-default-3__item" onclick="showTabThree();">CONTACT</a>
-      </li>
-    </ul>
-
-    <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel"
-      aria-labelledby="tab-default-1__item">
-      <article class="slds-card">
-        <div class="slds-card__body slds-card__body_inner">
-          <ul class="slds-grid slds-wrap slds-grid_pull-padded">
-            <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
-              <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-                <div class="slds-media__body">
-                  <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
-                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps" title="Related Record Title 1"
-                      style="font-size:20px">
-                      About Me
-                    </h1>
-                  </div>
-                  <div class="slds-tile__detail">
-                    <dl class="slds-list_horizontal slds-wrap">
-                      <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
-                        Label:
-                      </dt>
-                      <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for
-                        first label</dd>
-                      <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
-                        Label:
-                      </dt>
-                      <dd class="slds-item_detail slds-truncate" title="Description for second label">Description
-                        for
-                        second label</dd>
-                    </dl>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
-              <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-                <div class="slds-media__body">
-                  <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
-                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps" title="Related Record Title 1"
-                      style="font-size:20px">
-                      Interests
-                    </h1>
-                  </div>
-                  <div class="slds-tile__detail">
-                    <dl class="slds-list_horizontal slds-wrap">
-                      <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
-                        Label:
-                      </dt>
-                      <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for
-                        first label</dd>
-                      <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
-                        Label:
-                      </dt>
-                      <dd class="slds-item_detail slds-truncate" title="Description for second label">Description
-                        for
-                        second label</dd>
-                    </dl>
-                  </div>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-        <footer class="slds-card__footer">
-        </footer>
-      </article>
-    </div>
-
-    <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel"
-      aria-labelledby="tab-default-2__item"><img
-        src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
-      <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
-      <img src="https://img.icons8.com/color/48/000000/arduino.png" />Chemberry
-      <br />
-      <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" />AMBER14 Helper
-      <br />
-      <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
-      <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-      <img src="https://img.icons8.com/color/48/000000/css3.png" />
-      <img src="https://img.icons8.com/color/48/000000/javascript.png" />
-      <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" />This Website!
-    </div>
-    <div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel"
-      aria-labelledby="tab-default-3__item">
-      <div class="slds-align_absolute-center">
-        <a href="mailto:kevbkraus@gmail.com">
-          <img src="https://img.icons8.com/color/100/000000/gmail.png" />
-        </a>
-        <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
-          <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
-        </a>
-        <a href="https://github.com/KBKrause">
-          <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
-        </a>
-        <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
-          <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
-        </a>
-      </div>
-    </div>
+  <div class="slds-align_absolute-center">Non-Salesforce LDS icons provided by<a
+      href="https://icons8.com/">&nbsp;icons8</a>
   </div>
-  Non-Salesforce icons provided by <a href="https://icons8.com/">icons8</a>
 </body>
 
 </html>
