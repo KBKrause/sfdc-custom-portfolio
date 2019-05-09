@@ -61,6 +61,25 @@ function showTabThree() {
     "class", "slds-tabs_default__content slds-hide");
 }
 
+function selectCarouselOne() {
+  $("#content-id-01").attr("aria-hidden", "false");
+  $("#content-id-01").children().eq(0).attr("tabindex", "0");
+  $("#indicator-id-01").attr("class", "slds-carousel__indicator-action slds-is-active");
+  $("#indicator-id-01").attr("tabindex", "0");
+
+  $("#content-id-02").attr("aria-hidden", "true");
+  $("#content-id-02").children().eq(0).attr("tabindex", "-1");
+  $("#indicator-id-02").attr("class", "slds-carousel__indicator-action");
+  $("#indicator-id-02").attr("tabindex", "-1");
+
+  $("#content-id-03").attr("aria-hidden", "true");
+  $("#content-id-03").children().eq(0).attr("tabindex", "-1");
+  $("#indicator-id-03").attr("class", "slds-carousel__indicator-action");
+  $("#indicator-id-03").attr("tabindex", "-1");
+
+  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
+}
+
 function selectCarouselTwo() {
   $("#content-id-01").attr("aria-hidden", "true");
   $("#content-id-01").children().eq(0).attr("tabindex", "-1");
@@ -72,5 +91,33 @@ function selectCarouselTwo() {
   $("#indicator-id-02").attr("class", "slds-carousel__indicator-action slds-is-active");
   $("#indicator-id-02").attr("tabindex", "0");
 
+  $("#content-id-03").attr("aria-hidden", "true");
+  $("#content-id-03").children().eq(0).attr("tabindex", "-1");
+  $("#indicator-id-03").attr("class", "slds-carousel__indicator-action");
+  $("#indicator-id-03").attr("tabindex", "-1");
+
   $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-100%)");
+}
+
+function selectCarouselThree() {
+  $("#content-id-01").attr("aria-hidden", "true");
+  $("#content-id-01").children().eq(0).attr("tabindex", "-1");
+  $("#indicator-id-01").attr("class", "slds-carousel__indicator-action");
+  $("#indicator-id-01").attr("tabindex", "-1");
+
+  $("#content-id-02").attr("aria-hidden", "true");
+  $("#content-id-02").children().eq(0).attr("tabindex", "-1");
+  $("#indicator-id-02").attr("class", "slds-carousel__indicator-action");
+  $("#indicator-id-02").attr("tabindex", "-1");
+
+  $("#content-id-03").attr("aria-hidden", "false");
+  $("#content-id-03").children().eq(0).attr("tabindex", "0");
+  $("#indicator-id-03").attr("class", "slds-carousel__indicator-action slds-is-active");
+  $("#indicator-id-03").attr("tabindex", "0");
+
+  $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-200%)");
+}
+
+function autoplay() {
+  $("#CAROUSEL_AUTOPLAY").attr("aria-pressed", "true");
 }
