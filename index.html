@@ -8,6 +8,89 @@
 </head>
 
 <body>
+  <div class="slds-context-bar">
+    <div class="slds-context-bar__primary">
+      <div
+        class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+        <div class="slds-context-bar__icon-action">
+        </div>
+        <span class="slds-context-bar__label-action slds-context-bar__app-name">
+          <span class="slds-truncate" title="App Name">App Name</span>
+        </span>
+      </div>
+    </div>
+    <nav class="slds-context-bar__secondary" role="navigation">
+      <ul class="slds-grid">
+        <li class="slds-context-bar__item slds-is-active">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
+            <span class="slds-assistive-text">Current Page:</span>
+            <span class="slds-truncate" title="Home">Home</span>
+          </a>
+        </li>
+        <li
+          class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left_none">
+            <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true"
+              title="Open menu item submenu">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown_right">
+            <ul class="slds-dropdown__list" role="menu">
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate" title="Main action">
+                    <svg class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small"
+                      aria-hidden="true">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+                    </svg>Main action</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__header slds-has-divider_top-space" role="separator">
+                <span>Menu header</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate" title="Menu Item Three">Menu Item Three</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="slds-tabs_default">
     <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
       <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
@@ -17,6 +100,10 @@
       <li class="slds-tabs_default__item" title="Projects" role="presentation">
         <a class="slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2"
           id="tab-default-2__item" onclick="showTabTwo();">PROJECTS</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Contact" role="presentation">
+        <a class=" slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-4"
+          id="tab-default-4__item" onclick="alert(Stop);">SKILLS</a>
       </li>
       <li class="slds-tabs_default__item" title="Contact" role="presentation">
         <a class=" slds-tabs_default__link" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3"
@@ -40,124 +127,82 @@
       <div id="CAROUSEL_SLIDER" class="slds-carousel__panels" style="transform:translateX(-0%)">
         <div id="content-id-01" class="slds-carousel__panel" role="tabpanel" aria-hidden="false"
           aria-labelledby="indicator-id-01">
-          <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset" tabindex="0">
-            <div class="slds-carousel__image">
-              <img src="/assets/images/carousel/carousel-01.jpg" alt="Visit App Exchange" />
-            </div>
-            <div class="slds-carousel__content">
-              <article class="slds-card" style="height:400px">
-                <div class="slds-card__body slds-card__body_inner">
-                  <ul class="slds-grid slds-wrap slds-grid_pull-padded">
-                    <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
-                      <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-                        <div class="slds-media__body">
-                          <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
-                            <h1 class="slds-tile__title slds-truncate slds-text-title_caps"
-                              title="Related Record Title 1" style="font-size:20px">
-                              About Me
-                            </h1>
-                          </div>
-                          <div class="slds-tile__detail">
-                            <dl class="slds-list_horizontal slds-wrap">
-                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
-                                Label:
-                              </dt>
-                              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description
-                                for
-                                first label</dd>
-                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
-                                Label:
-                              </dt>
-                              <dd class="slds-item_detail slds-truncate" title="Description for second label">
-                                Description
-                                for
-                                second label</dd>
-                            </dl>
-                          </div>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_1-of-2">
-                      <article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-                        <div class="slds-media__body">
-                          <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
-                            <h1 class="slds-tile__title slds-truncate slds-text-title_caps"
-                              title="Related Record Title 1" style="font-size:20px">
-                              Interests
-                            </h1>
-                          </div>
-                          <div class="slds-tile__detail">
-                            <dl class="slds-list_horizontal slds-wrap">
-                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First
-                                Label:
-                              </dt>
-                              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description
-                                for
-                                first label</dd>
-                              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second
-                                Label:
-                              </dt>
-                              <dd class="slds-item_detail slds-truncate" title="Description for second label">
-                                Description
-                                for
-                                second label</dd>
-                            </dl>
-                          </div>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
-                </div>
-                <footer class="slds-card__footer">
-                </footer>
-              </article>
-            </div>
-          </a>
+          <div class="slds-carousel__content">
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              style="font-size:25px">
+              Who are you?
+            </h1>
+            <p>some text</p>
+          </div>
         </div>
         <div id="content-id-02" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
           aria-labelledby="indicator-id-02">
-          <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset" tabindex="-1">
-            <div class="slds-carousel__image">
-              <img src="/assets/images/carousel/carousel-02.jpg" alt="Click to Customize" />
-            </div>
-            <div class="slds-carousel__content">
-              <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
-              <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
-              <img src="https://img.icons8.com/color/48/000000/arduino.png" />Chemberry
-              <br />
-              <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" />AMBER14 Helper
-              <br />
-              <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
-              <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-              <img src="https://img.icons8.com/color/48/000000/css3.png" />
-              <img src="https://img.icons8.com/color/48/000000/javascript.png" />
-              <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" />This Website!
-            </div>
-          </a>
+          <div class="slds-carousel__content">
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              style="font-size:25px">
+              Some of my favorite projects . . .
+            </h1>
+            <br />
+            <br />
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              style="font-size:15px">
+              "Chemberry"
+            </h1>
+            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
+            <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
+            <img src="https://img.icons8.com/color/48/000000/arduino.png" /><br /><br />
+            I created Chemberry out of my love for chemistry and code.<br />
+            It is a microcontroller programmed to facilitate note taking and experiment analysis in laboratories.<br />
+            Programmed in Java and C/C++, the Raspberry Pi is the GUI while the Arduino collects data using various lab
+            instruments.
+            <br />
+            <br />
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              style="font-size:15px">
+              "AMBER14 MD Analyzer"
+            </h1>
+            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /><br /><br />
+            <a href="http://ambermd.org/index.php">AMBER</a> "is a suite of biomolecular simulation programs."<br />
+            It produces large datasets that are unwieldy and troublesome to analyze by hand.<br />
+            In college, we used this program to help analyze some of the datasets produced by our experiments.</br>
+            We published two papers in the Journal of Dispersion Science using some of these results.
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              title="Related Record Title 1" style="font-size:15px">
+              This Page!
+            </h1>
+            <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+            <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" />
+          </div>
         </div>
         <div id="content-id-03" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
           aria-labelledby="indicator-id-03">
-          <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset" tabindex="-1">
-            <div class="slds-carousel__image">
-              <img src="/assets/images/carousel/carousel-03.jpg" alt="Download SalesforceA" />
+          <div class="slds-carousel__content">
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              title="Related Record Title 1" style="font-size:25px">
+              Carrier Pigeon Alternatives
+            </h1>
+            <div class="slds-align_absolute-center">
+              <a href="mailto:kevbkraus@gmail.com">
+                <img src="https://img.icons8.com/color/100/000000/gmail.png" />
+              </a>
+              <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
+                <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
+              </a>
+              <a href="https://github.com/KBKrause">
+                <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
+              </a>
+              <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
+                <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
+              </a>
             </div>
-            <div class="slds-carousel__content">
-              <div class="slds-align_absolute-center">
-                <a href="mailto:kevbkraus@gmail.com">
-                  <img src="https://img.icons8.com/color/100/000000/gmail.png" />
-                </a>
-                <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
-                  <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
-                </a>
-                <a href="https://github.com/KBKrause">
-                  <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
-                </a>
-                <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
-                  <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
-                </a>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
       <ul class="slds-carousel__indicators" role="tablist">
