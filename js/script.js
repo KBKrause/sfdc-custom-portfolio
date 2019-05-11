@@ -1,3 +1,11 @@
+$(document).ready(function () {
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    backSpeed: 40,
+    typeSpeed: 40
+  });
+});
+
 function showTabOne() {
   $("#tab-default-1__item").parent().attr(
     "class", "slds-tabs_default__item slds-is-active");

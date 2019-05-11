@@ -3,11 +3,20 @@
 <head>
   <link rel="stylesheet" href="css/salesforce-lightning-design-system.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
+  <!-- WELCOME MAT -->
+  <div id="typed-strings">
+    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+    <p>It can type anything you want</p>
+  </div>
+  <span id="typed"></span>
+
+  <!-- NAVBAR -->
   <div class="slds-context-bar">
     <div class="slds-context-bar__primary">
       <div
@@ -91,6 +100,8 @@
       </ul>
     </nav>
   </div>
+
+  <!-- TABS -->
   <div class="slds-tabs_default">
     <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
       <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
@@ -112,6 +123,7 @@
     </ul>
   </div>
 
+  <!-- CAROUSEL -->
   <div class="slds-carousel" style="height:500px">
     <div class="slds-carousel__stage">
       <span class="slds-carousel__autoplay">
@@ -143,42 +155,69 @@
               Some of my favorite projects . . .
             </h1>
             <br />
-            <br />
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:15px">
-              "Chemberry"
-            </h1>
-            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
-            <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
-            <img src="https://img.icons8.com/color/48/000000/arduino.png" /><br /><br />
-            I created Chemberry out of my love for chemistry and code.<br />
-            It is a microcontroller programmed to facilitate note taking and experiment analysis in laboratories.<br />
-            Programmed in Java and C/C++, the Raspberry Pi is the GUI while the Arduino collects data using various lab
-            instruments.
-            <br />
-            <br />
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:15px">
-              "AMBER14 MD Analyzer"
-            </h1>
-            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /><br /><br />
-            <a href="http://ambermd.org/index.php">AMBER</a> "is a suite of biomolecular simulation programs."<br />
-            It produces large datasets that are unwieldy and troublesome to analyze by hand.<br />
-            In college, we used this program to help analyze some of the datasets produced by our experiments.</br>
-            We published two papers in the Journal of Dispersion Science using some of these results.
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              title="Related Record Title 1" style="font-size:15px">
-              This Page!
-            </h1>
-            <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" />
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
-            <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" />
+            <div class="slds-grid">
+              <div class="slds-col">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:15px">
+                  "Chemberry"
+                </h1>
+                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
+                <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
+                <img src="https://img.icons8.com/color/48/000000/arduino.png" /><br /><br />
+                I created Chemberry out of my love for chemistry and code.<br />
+                It is a microcontroller programmed to facilitate note taking and experiment analysis in
+                laboratories.<br />
+                Programmed in Java and C/C++, the Raspberry Pi is the GUI while the Arduino collects data using various
+                lab
+                instruments.
+                <br />
+                <br />
+              </div>
+              <div class="slds=col">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:15px">
+                  "AMBER14 MD Analyzer"
+                </h1>
+                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /><br /><br />
+                <a href="http://ambermd.org/index.php">AMBER</a> "is a suite of biomolecular simulation programs."<br />
+                It produces large datasets that are unwieldy and troublesome to analyze by hand.<br />
+                In college, we used this program to help analyze some of the datasets produced by our experiments.</br>
+                We published two papers in the Journal of Dispersion Science using some of these results.
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="slds-grid">
+              <div class="slds-col">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  title="Related Record Title 1" style="font-size:15px">
+                  This Page!
+                </h1>
+                <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+                <img src="https://img.icons8.com/color/48/000000/css3.png" />
+                <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+                <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" /><br /><br />
+                Front-end development is not my specialty. I was very nervous to even attempt building this from
+                scratch.<br />
+                I like the styling and CSS that Salesforces uses for its products, so I thought I could leverage that
+                using
+                the Lightning Design System.<br />
+                I also don't like to overcomplicate things, so I chose not to use any "advanced" frameworks like React
+                or
+                Angular.<br />
+              </div>
+              <div class="slds-col">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  title="Related Record Title 1" style="font-size:15px">
+                  Coming Soon . . .
+                </h1>
+                <img src="https://img.icons8.com/color/48/000000/python.png" />
+                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" />
+              </div>
+            </div>
           </div>
         </div>
         <div id="content-id-03" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
@@ -187,7 +226,9 @@
             <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
               title="Related Record Title 1" style="font-size:25px">
               Carrier Pigeon Alternatives
-            </h1>
+            </h1><br />
+            By visiting this tab, I hope that means you'll reach out to me!<br />
+            I am always open to meeting and networking with new people.<br /><br />
             <div class="slds-align_absolute-center">
               <a href="mailto:kevbkraus@gmail.com">
                 <img src="https://img.icons8.com/color/100/000000/gmail.png" />
@@ -202,9 +243,13 @@
                 <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
               </a>
             </div>
+            <br />
+            If your preferred communication channel is not listed above, please send me an email.<br />
           </div>
         </div>
       </div>
+
+      <!-- CAROUSEL FOOTER BUTTONS -->
       <ul class="slds-carousel__indicators" role="tablist">
         <li class="slds-carousel__indicator" role="presentation">
           <a onclick="selectCarouselOne();" id="indicator-id-01" class="slds-carousel__indicator-action slds-is-active"
@@ -221,6 +266,12 @@
           </a>
         </li>
         <li class="slds-carousel__indicator" role="presentation">
+          <a id="indicator-id-04" class="slds-carousel__indicator-action" href="javascript:void(0);" role="tab"
+            tabindex="-1" aria-selected="false" aria-controls="content-id-04" title="Visit App Exchange tab">
+            <span class="slds-assistive-text">Visit App Exchange tab</span>
+          </a>
+        </li>
+        <li class="slds-carousel__indicator" role="presentation">
           <a onclick="selectCarouselThree();" id="indicator-id-03" class="slds-carousel__indicator-action"
             href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="content-id-03"
             title="Download SalesforceA tab">
@@ -230,7 +281,6 @@
       </ul>
     </div>
   </div>
-
   <div class="slds-align_absolute-center">Non-Salesforce LDS icons provided by<a
       href="https://icons8.com/">&nbsp;icons8</a>
   </div>
