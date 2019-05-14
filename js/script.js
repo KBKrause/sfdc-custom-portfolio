@@ -2,7 +2,10 @@ $(document).ready(function () {
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     backSpeed: 40,
-    typeSpeed: 40
+    typeSpeed: 40,
+    backDelay: 4000,
+    loop: true,
+    loopCount: Infinity,
   });
 });
 
