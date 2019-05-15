@@ -214,3 +214,21 @@ function selectCarouselFour() {
 function autoplay() {
   $("#CAROUSEL_AUTOPLAY").attr("aria-pressed", "true");
 }
+
+function openAccordionOne() {
+  $("#accordion-frameworks").attr("class", "slds-accordion__section");
+  $("#accordion-products").attr("class", "slds-accordion__section");
+  $("#accordion-languages").attr("class", "slds-accordion__section slds-is-open");
+}
+
+function openAccordionTwo() {
+  $("#accordion-languages").attr("class", "slds-accordion__section");
+  $("#accordion-products").attr("class", "slds-accordion__section");
+  $("#accordion-frameworks").attr("class", "slds-accordion__section slds-is-open");
+}
+
+function openAccordionThree() {
+  $("#accordion-languages").attr("class", "slds-accordion__section");
+  $("#accordion-frameworks").attr("class", "slds-accordion__section");
+  $("#accordion-products").attr("class", "slds-accordion__section slds-is-open");
+}

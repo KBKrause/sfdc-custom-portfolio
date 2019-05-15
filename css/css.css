@@ -4,8 +4,14 @@
 }
 
 /** CLASSES **/
+.standard-img {
+  height: 96px;
+  width: 96px;
+}
+
 .slds-carousel__content {
   height: 480px;
+  outline: none;
 }
 
 .portrait {
@@ -14,6 +20,19 @@
 }
 
 .portrait img {
-  width: 50%; /* Will shrink image to 30% of its original width */
+  width: 50%;
   height: auto;
 }​
+
+.skill_bar {
+  width:600px;
+  height:50px;
+  background:#c0c0c0;
+  margin-bottom:5px;
+}
+
+.skill_bar_progress {
+  width:0%;
+  height:100px;
+  background:#00f;
+}

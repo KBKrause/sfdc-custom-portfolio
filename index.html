@@ -3,6 +3,9 @@
 <head>
   <link rel="stylesheet" href="css/salesforce-lightning-design-system.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+
   <script src="js/typed.min.js"></script>
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/css.css">
@@ -65,7 +68,7 @@
           <div class="slds-carousel__content">
             <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
               style="font-size:25px">
-              Who are you?
+              Who am I?
             </h1><br />
             <div class="slds-grid">
               <div class="slds-text-heading_small slds-col">
@@ -222,10 +225,148 @@
               me an email.</p><br />
           </div>
         </div>
+
+        <!-- SKILLS ACCORDION -->
+        <div id="content-id-04" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
+          aria-labelledby="indicator-id-04">
+          <div class="slds-carousel__content">
+            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+              title="Related Record Title 1" style="font-size:25px">
+              What do I know?
+            </h1><br />
+            <p class="slds-text-heading_small">These are the languages, technologies, and other skills I have
+              am most familiar with.</p>
+            <br /><br />
+            <ul class="slds-accordion">
+              <li class="slds-accordion__list-item">
+                <section id="accordion-languages" class="slds-accordion__section slds-is-open">
+                  <div class="slds-accordion__summary">
+                    <h3 class="slds-accordion__summary-heading">
+                      <button aria-controls="accordion-details-01" aria-expanded="true"
+                        class="slds-button slds-button_reset slds-accordion__summary-action">
+                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                          aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        <span class="slds-truncate" title="Accordion summary" onclick="openAccordionOne();">Programming
+                          Languages, Frameworks, and Related Skills</span>
+                      </button>
+                    </h3>
+                  </div>
+                  <div class="slds-accordion__content" id="accordion-details-01">
+                    <div class="slds-grid">
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" /><br />
+                        Java (Core Java)
+                      </div>
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" /><br />
+                        C++</div>
+                      <div class="slds-col slds-size_1-of-4"><img class="standard-img"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/1200px-C_Sharp_wordmark.svg.png" /><br />
+                        C# / ASP.NET
+                      </div>
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/html-5.png" />
+                        <img src="https://img.icons8.com/color/96/000000/css3.png" />
+                        <img src="https://img.icons8.com/color/96/000000/javascript.png" /><br />
+                        Web Development (HTML, CSS, Bootstrap, Javascript, jQuery)</div>
+                    </div>
+                    <div class="slds-grid">
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/api-settings.png" />
+                        <br />
+                        RESTful APIs, System Integration
+                      </div>
+                      <div class="slds-col slds-size_1-of-4">
+                        <img src="https://img.icons8.com/color/96/000000/database.png"><br />
+                        SQL (MySQL, SQLite, Microsoft, Oracle)
+                      </div>
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/git.png" /><br />
+                        Git (Github, Gitlab, Bitbucket)
+                      </div>
+                      <div class="slds-col slds-size_1-of-4">
+                        <img src="https://img.icons8.com/color/96/000000/synchronize.png"><br />
+                        Continuous Integration/Delivery (Maven, Bitbucket Pipelines)
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li class="slds-accordion__list-item">
+                <section id="accordion-frameworks" class="slds-accordion__section">
+                  <div class="slds-accordion__summary">
+                    <h3 class="slds-accordion__summary-heading">
+                      <button aria-controls="accordion-details-02" aria-expanded="false"
+                        class="slds-button slds-button_reset slds-accordion__summary-action">
+                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                          aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        <span class="slds-truncate" title="Accordion summary" onclick="openAccordionTwo();">"Soft"
+                          Skills and Methodologies</span>
+                      </button>
+                    </h3>
+                  </div>
+                  <div class="slds-accordion__content" id="accordion-details-02">
+                    <div class="slds-grid">
+                      <div class="slds-col slds-size_1-of-4">
+                        Consulting
+                      </div>
+                      <div class="slds-col slds-size_1-of-4">
+                        Agile Delivery (Scrum, Kanban)
+                      </div>
+                      <div class="slds-col slds-size_1-of-4">
+                        Quality Assurance (Black box, smoke testing)
+                      </div>
+                      <div class="slds-col slds-size_1-of-4">
+                        Team-oriented
+                      </div>
+                    </div>
+                </section>
+              </li>
+              <li class="slds-accordion__list-item">
+                <section id="accordion-products" class="slds-accordion__section">
+                  <div class="slds-accordion__summary">
+                    <h3 class="slds-accordion__summary-heading">
+                      <button aria-controls="accordion-details-03" aria-expanded="false"
+                        class="slds-button slds-button_reset slds-accordion__summary-action">
+                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                          aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        <span class="slds-truncate" title="Accordion summary"
+                          onclick="openAccordionThree();">Products</span>
+                      </button>
+                    </h3>
+                  </div>
+                  <div class="slds-accordion__content" id="accordion-details-03">
+                    <div class="slds-grid">
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/100/000000/salesforce.png" /><br />
+                        Salesforce
+                      </div>
+                      <div class="slds-col slds-size_1-of-4"><img class="standard-img"
+                          src="http://seekvectorlogo.com/wp-content/uploads/2018/11/mulesoft-vector-logo-small.png" /><br />
+                        Mulesoft
+                      </div>
+                      <div class="slds-col slds-size_1-of-4"><img
+                          src="https://img.icons8.com/color/96/000000/firebase.png" /><br />
+                        Firebase
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </ul>
+            <br />
+          </div>
+        </div>
       </div>
 
       <!-- CAROUSEL FOOTER BUTTONS -->
-      <ul class="slds-carousel__indicators" role="tablist">
+      <ul class=" slds-carousel__indicators" role="tablist">
         <li class="slds-carousel__indicator" role="presentation">
           <a onclick="selectCarouselOne();" id="indicator-id-01" class="slds-carousel__indicator-action slds-is-active"
             href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="content-id-01"
@@ -257,8 +398,13 @@
     </div>
   </div>
   <br />
-  <div class="slds-align_absolute-center">Non-Salesforce LDS icons provided by<a
-      href="https://icons8.com/">&nbsp;icons8</a>
+  <div class="slds-align_absolute-center">
+    <p>Non-Salesforce LDS icons provided by&nbsp;<a href="https://icons8.com/">icons8.</a></p>
+  </div>
+  <br />
+  <div class="slds-align_absolute-center">
+    <p>The stylesheets used on this page are copyright (c) 2015-present, Salesforce.com, Inc. - All rights
+      reserved.</p>
   </div>
 </body>
 
