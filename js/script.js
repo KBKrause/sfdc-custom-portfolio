@@ -3,7 +3,7 @@ $(document).ready(function () {
     stringsElement: '#typed-strings',
     backSpeed: 40,
     typeSpeed: 40,
-    backDelay: 4000,
+    backDelay: 2500,
     loop: true,
     loopCount: Infinity,
   });

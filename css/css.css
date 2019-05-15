@@ -1,7 +1,19 @@
-.typed-str {
-  color: red
+/** ID **/
+#animationKeys {
+  font-size: 24px;
 }
 
+/** CLASSES **/
 .slds-carousel__content {
-  height: 440px;
+  height: 480px;
 }
+
+.portrait {
+  width: auto;
+  display: inline-block;
+}
+
+.portrait img {
+  width: 50%; /* Will shrink image to 30% of its original width */
+  height: auto;
+}​
