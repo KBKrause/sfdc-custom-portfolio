@@ -12,381 +12,399 @@
 </head>
 
 <body>
+  <div class="container">
+    <div id="cloud-intro">
 
-  <!-- NAVBAR -->
-  <div class="slds-context-bar">
-    <div id="animationKeys" class="slds-context-bar__primary slds-align_absolute-center slds-text-title_caps">
-      <!-- WELCOME MAT -->
-      <div id="typed-strings">
-        <p>Technical Consultant</p>
-        <p>Software Developer</p>
-        <p>Visionary</p>
-        <p>Kevin Krause</p>
-      </div>
-      <span id="typed"></span>
-    </div>
-  </div>
 
-  <!-- TABS -->
-  <div class="slds-tabs_default">
-    <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
-      <li class="slds-tabs_default__item slds-is-active" title="About" role="presentation">
-        <a class="slds-tabs_default__link" role="tab" aria-selected="true" aria-controls="tab-default-1"
-          id="tab-default-1__item" onclick="showTabOne();">ABOUT</a>
-      </li>
-      <li class="slds-tabs_default__item" title="Projects" role="presentation">
-        <a class="slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-2"
-          id="tab-default-2__item" onclick="showTabTwo();">PROJECTS</a>
-      </li>
-      <li class="slds-tabs_default__item" title="Contact" role="presentation">
-        <a class=" slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-3"
-          id="tab-default-3__item" onclick="showTabThree();">CONTACT</a>
-      </li>
-      <li class="slds-tabs_default__item" title="Skills" role="presentation">
-        <a class=" slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-4"
-          id="tab-default-4__item" onclick="showTabFour();">SKILLS</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- CAROUSEL -->
-  <div class="slds-carousel" style="height:500px">
-    <div class="slds-carousel__stage">
-      <div id="CAROUSEL_SLIDER" class="slds-carousel__panels" style="transform:translateX(-0%)">
-        <div id="content-id-01" class="slds-carousel__panel" role="tabpanel" aria-hidden="false"
-          aria-labelledby="indicator-id-01">
-          <div class="slds-carousel__content">
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:25px">
-              Who am I?
-            </h1><br />
-            <div class="slds-grid">
-              <div class="slds-text-heading_small slds-col">
-                <p>My name's Kevin. I'm a freshly minted software developer.</p><br />
-                <p>I've dabbled a little bit in everything - web development, desktop apps, APIs, DevOps, and even the
-                  cloud.</p>
-                <p>Down the road, I see myself becoming some type of software architect. The journey has just begun.</p>
-                <br />
-                <p>I really enjoy learning
-                  about and working with enterprise applications like Salesforce, SAP, Oracle, AWS and Heroku.</p><br />
-                <p>I will openly admit that I'm not the best developer around, but I'm very resourceful and ambitious.
-                </p><br />
-                <p>I
-                  think knowing HOW to get the answer is better than knowing WHAT the answer is.</p><br />
-                <p>Right now, I do technical consulting work revolving around the Salesforce platform. I've specialized
-                  in
-                  Mulesoft ESB and integrations. I have 7 certifications.</p><br />
-                <p>Thanks for checking out my website. Please browse around and reach out if you'd like to know more!
-                </p>
-              </div>
-              <div class="slds-col portrait">
-                <img src="img/portrait2.jpg" />
-              </div>
-            </div>
+      <!-- NAVBAR -->
+      <div class="slds-context-bar">
+        <div id="animationKeys" class="slds-context-bar__primary slds-align_absolute-center slds-text-title_caps">
+          <!-- WELCOME MAT -->
+          <div id="typed-strings">
+            <p>Technical Consultant</p>
+            <p>Software Developer</p>
+            <p>Visionary</p>
+            <p>Kevin Krause</p>
           </div>
-        </div>
-        <div id="content-id-02" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
-          aria-labelledby="indicator-id-02">
-          <div class="slds-carousel__content">
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:25px">
-              Some of my favorite projects . . .
-            </h1>
-            <br />
-            <div class="slds-grid">
-              <div class="slds-col slds-size_1-of-2">
-                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-                  style="font-size:15px">
-                  "Chemberry"&nbsp;
-                  <span class="slds-icon_container slds-icon-utility-new_window"
-                    title="Description of icon when needed">
-                    <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
-                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
-                    </svg>
-                    <span class="slds-assistive-text">Description of icon when needed</span>
-                  </span>
-                </h1>
-                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
-                <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
-                <img src="https://img.icons8.com/color/48/000000/arduino.png" /><br /><br />
-                I created Chemberry out of my love for chemistry and code.<br />
-                It is a microcontroller programmed to facilitate note taking and experiment analysis in
-                laboratories.<br />
-                Programmed in Java and C/C++, the Raspberry Pi is the GUI while the Arduino collects data using various
-                lab
-                instruments.
-                <br />
-                <br />
-              </div>
-              <div class="slds=col slds-size_1-of-2">
-                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-                  style="font-size:15px">
-                  "AMBER14 MD Analyzer"&nbsp;
-                  <span class="slds-icon_container slds-icon-utility-new_window"
-                    title="Description of icon when needed">
-                    <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
-                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
-                    </svg>
-                    <span class="slds-assistive-text">Description of icon when needed</span>
-                  </span>
-                </h1>
-                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /><br /><br />
-                <a href="http://ambermd.org/index.php">AMBER</a> "is a suite of biomolecular simulation programs."<br />
-                It produces large datasets that are unwieldy and troublesome to analyze by hand.<br />
-                In college, we used this program to help analyze some of the datasets produced by our experiments.</br>
-                We published two papers in the Journal of Dispersion Science using some of these results.
-                <br />
-                <br />
-                <br />
-                <br />
-              </div>
-            </div>
-            <div class="slds-grid">
-              <div class="slds-col slds-size_1-of-2">
-                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-                  style="font-size:15px">
-                  This Page!&nbsp;
-                  <span class="slds-icon_container slds-icon-utility-new_window"
-                    title="Description of icon when needed">
-                    <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
-                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
-                    </svg>
-                    <span class="slds-assistive-text">Description of icon when needed</span>
-                  </span>
-                </h1>
-                <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
-                <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-                <img src="https://img.icons8.com/color/48/000000/css3.png" />
-                <img src="https://img.icons8.com/color/48/000000/javascript.png" />
-                <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" /><br /><br />
-                Front-end development is not my specialty. I was very nervous to even attempt building this from
-                scratch.<br />
-                I like the styling and CSS that Salesforces uses for its products, so I thought I could leverage that
-                using
-                the Lightning Design System.<br />
-                I also don't like to overcomplicate things, so I chose not to use any "advanced" frameworks like React
-                or
-                Angular.<br />
-              </div>
-              <div class="slds-col slds-size_1-of-2">
-                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-                  style="font-size:15px">
-                  Coming Soon . . .&nbsp;
-                  <span class="slds-icon_container slds-icon-utility-new_window"
-                    title="Description of icon when needed">
-                    <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
-                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
-                    </svg>
-                    <span class="slds-assistive-text">Description of icon when needed</span>
-                  </span>
-                </h1>
-                <img src="https://img.icons8.com/color/48/000000/python.png" />
-                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="content-id-03" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
-          aria-labelledby="indicator-id-03">
-          <div class="slds-carousel__content">
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:25px">
-              Carrier Pigeon Alternatives
-            </h1><br />
-            <p class="slds-text-heading_small">By visiting this tab, I hope that means you'll reach out to
-              me!<br /><br />
-              I am always open to meeting and networking with new people.</p><br />
-            <div class="slds-align_absolute-center">
-              <a href="mailto:kevbkraus@gmail.com">
-                <img src="https://img.icons8.com/color/100/000000/gmail.png" />
-              </a>
-              <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
-                <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
-              </a>
-              <a href="https://github.com/KBKrause">
-                <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
-              </a>
-              <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
-                <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
-              </a>
-            </div>
-            <br />
-            <p class="slds-text-heading_small">If your preferred communication channel is not listed above, please send
-              me an email.</p><br />
-          </div>
-        </div>
-
-        <!-- SKILLS ACCORDION -->
-        <div id="content-id-04" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
-          aria-labelledby="indicator-id-04">
-          <div class="slds-carousel__content">
-            <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
-              style="font-size:25px">
-              What do I know?
-            </h1><br />
-            <p class="slds-text-heading_small">These are the languages, technologies, and other skills I have
-              am most familiar with.</p>
-            <br /><br />
-            <ul class="slds-accordion">
-              <li class="slds-accordion__list-item">
-                <section id="accordion-languages" class="slds-accordion__section slds-is-open">
-                  <div class="slds-accordion__summary">
-                    <h3 class="slds-accordion__summary-heading">
-                      <button aria-controls="accordion-details-01" aria-expanded="true"
-                        class="slds-button slds-button_reset slds-accordion__summary-action">
-                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
-                          aria-hidden="true">
-                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
-                        </svg>
-                        <span class="slds-truncate" onclick="openAccordionOne();">Programming
-                          Languages, Frameworks, and Related Skills</span>
-                      </button>
-                    </h3>
-                  </div>
-                  <div class="slds-accordion__content" id="accordion-details-01">
-                    <div class="slds-grid">
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" /><br />
-                        Java (Core Java)
-                      </div>
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" /><br />
-                        C++</div>
-                      <div class="slds-col slds-size_1-of-4"><img class="standard-img"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/1200px-C_Sharp_wordmark.svg.png" /><br />
-                        C# / ASP.NET
-                      </div>
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/html-5.png" />
-                        <img src="https://img.icons8.com/color/96/000000/css3.png" />
-                        <img src="https://img.icons8.com/color/96/000000/javascript.png" /><br />
-                        Web Development (HTML, CSS, Bootstrap, Javascript, jQuery)</div>
-                    </div>
-                    <div class="slds-grid">
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/api-settings.png" />
-                        <br />
-                        RESTful APIs, System Integration
-                      </div>
-                      <div class="slds-col slds-size_1-of-4">
-                        <img src="https://img.icons8.com/color/96/000000/database.png"><br />
-                        SQL (MySQL, SQLite, Microsoft, Oracle)
-                      </div>
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/git.png" /><br />
-                        Git (Github, Gitlab, Bitbucket)
-                      </div>
-                      <div class="slds-col slds-size_1-of-4">
-                        <img src="https://img.icons8.com/color/96/000000/synchronize.png"><br />
-                        Continuous Integration/Delivery (Maven, Bitbucket Pipelines)
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </li>
-              <li class="slds-accordion__list-item">
-                <section id="accordion-frameworks" class="slds-accordion__section">
-                  <div class="slds-accordion__summary">
-                    <h3 class="slds-accordion__summary-heading">
-                      <button aria-controls="accordion-details-02" aria-expanded="false"
-                        class="slds-button slds-button_reset slds-accordion__summary-action">
-                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
-                          aria-hidden="true">
-                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
-                        </svg>
-                        <span class="slds-truncate" onclick="openAccordionTwo();">"Soft"
-                          Skills and Methodologies</span>
-                      </button>
-                    </h3>
-                  </div>
-                  <div class="slds-accordion__content" id="accordion-details-02">
-                    <div class="slds-grid">
-                      <div class="slds-col slds-size_1-of-4">
-                        Consulting
-                      </div>
-                      <div class="slds-col slds-size_1-of-4">
-                        Agile Delivery (Scrum, Kanban)
-                      </div>
-                      <div class="slds-col slds-size_1-of-4">
-                        Quality Assurance (Black box, smoke testing)
-                      </div>
-                      <div class="slds-col slds-size_1-of-4">
-                        Team-oriented
-                      </div>
-                    </div>
-                </section>
-              </li>
-              <li class="slds-accordion__list-item">
-                <section id="accordion-products" class="slds-accordion__section">
-                  <div class="slds-accordion__summary">
-                    <h3 class="slds-accordion__summary-heading">
-                      <button aria-controls="accordion-details-03" aria-expanded="false"
-                        class="slds-button slds-button_reset slds-accordion__summary-action">
-                        <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
-                          aria-hidden="true">
-                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
-                        </svg>
-                        <span class="slds-truncate" onclick="openAccordionThree();">Products</span>
-                      </button>
-                    </h3>
-                  </div>
-                  <div class="slds-accordion__content" id="accordion-details-03">
-                    <div class="slds-grid">
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/100/000000/salesforce.png" /><br />
-                        Salesforce
-                      </div>
-                      <div class="slds-col slds-size_1-of-4"><img class="standard-img"
-                          src="http://seekvectorlogo.com/wp-content/uploads/2018/11/mulesoft-vector-logo-small.png" /><br />
-                        Mulesoft
-                      </div>
-                      <div class="slds-col slds-size_1-of-4"><img
-                          src="https://img.icons8.com/color/96/000000/firebase.png" /><br />
-                        Firebase
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </li>
-            </ul>
-            <br />
-          </div>
+          <span id="typed"></span>
         </div>
       </div>
 
-      <!-- CAROUSEL FOOTER BUTTONS -->
-      <ul class=" slds-carousel__indicators" role="tablist">
-        <li class="slds-carousel__indicator" role="presentation">
-          <a onclick="showTabOne();" id="indicator-id-01" class="slds-carousel__indicator-action slds-is-active"
-            role="tab" tabindex="0" aria-selected="true" aria-controls="content-id-01">
-          </a>
-        </li>
-        <li class="slds-carousel__indicator" role="presentation">
-          <a onclick="showTabTwo();" id="indicator-id-02" class="slds-carousel__indicator-action" role="tab"
-            tabindex="-1" aria-selected="false" aria-controls="content-id-02">
-          </a>
-        </li>
-        <li class="slds-carousel__indicator" role="presentation">
-          <a onclick="showTabThree();" id="indicator-id-03" class="slds-carousel__indicator-action" role="tab"
-            tabindex="-1" aria-selected="false" aria-controls="content-id-03">
-          </a>
-        </li>
-        <li class="slds-carousel__indicator" role="presentation">
-          <a onclick="showTabFour();" id="indicator-id-04" class="slds-carousel__indicator-action" role="tab"
-            tabindex="-1" aria-selected="false" aria-controls="content-id-04">
-          </a>
-        </li>
-      </ul>
+      <!-- TABS -->
+      <div class="slds-tabs_default">
+        <ul class="slds-tabs_default__nav slds-align_absolute-center" role="tablist">
+          <li class="slds-tabs_default__item slds-is-active" title="About" role="presentation">
+            <a class="slds-tabs_default__link" role="tab" aria-selected="true" aria-controls="tab-default-1"
+              id="tab-default-1__item" onclick="showTabOne();">ABOUT</a>
+          </li>
+          <li class="slds-tabs_default__item" title="Projects" role="presentation">
+            <a class="slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-2"
+              id="tab-default-2__item" onclick="showTabTwo();">PROJECTS</a>
+          </li>
+          <li class="slds-tabs_default__item" title="Contact" role="presentation">
+            <a class=" slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-3"
+              id="tab-default-3__item" onclick="showTabThree();">CONTACT</a>
+          </li>
+          <li class="slds-tabs_default__item" title="Skills" role="presentation">
+            <a class=" slds-tabs_default__link" role="tab" aria-selected="false" aria-controls="tab-default-4"
+              id="tab-default-4__item" onclick="showTabFour();">SKILLS</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="slds-carousel" style="height:500px">
+        <div class="slds-carousel__stage">
+          <div id="CAROUSEL_SLIDER" class="slds-carousel__panels" style="transform:translateX(-0%)">
+            <div id="content-id-01" class="slds-carousel__panel" role="tabpanel" aria-hidden="false"
+              aria-labelledby="indicator-id-01">
+              <div class="slds-carousel__content">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:25px">
+                  Who am I?
+                </h1><br />
+                <div class="slds-grid">
+                  <div class="slds-text-heading_small slds-col">
+                    <p>My name's Kevin. I'm a freshly minted software developer.</p><br />
+                    <p>I've dabbled a little bit in everything - web development, desktop apps, APIs, DevOps, and even
+                      the
+                      cloud.</p>
+                    <p>Down the road, I see myself becoming some type of software architect. The journey has just begun.
+                    </p>
+                    <br />
+                    <p>I really enjoy learning
+                      about and working with enterprise applications like Salesforce, SAP, Oracle, AWS and Heroku.</p>
+                    <br />
+                    <p>I will openly admit that I'm not the best developer around, but I'm very resourceful and
+                      ambitious.
+                    </p><br />
+                    <p>I
+                      think knowing HOW to get the answer is better than knowing WHAT the answer is.</p><br />
+                    <p>Right now, I do technical consulting work revolving around the Salesforce platform. I've
+                      specialized
+                      in
+                      Mulesoft ESB and integrations. I have 7 certifications.</p><br />
+                    <p>Thanks for checking out my website. Please browse around and reach out if you'd like to know
+                      more!
+                    </p>
+                  </div>
+                  <div class="slds-col portrait">
+                    <img src="img/portrait2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="content-id-02" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
+              aria-labelledby="indicator-id-02">
+              <div class="slds-carousel__content">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:25px">
+                  Some of my favorite projects . . .
+                </h1>
+                <br />
+                <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-2">
+                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                      style="font-size:15px">
+                      "Chemberry"&nbsp;
+                      <span class="slds-icon_container slds-icon-utility-new_window"
+                        title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Description of icon when needed</span>
+                      </span>
+                    </h1>
+                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" />
+                    <img src="https://img.icons8.com/color/48/000000/raspberry-pi.png" />
+                    <img src="https://img.icons8.com/color/48/000000/arduino.png" /><br /><br />
+                    I created Chemberry out of my love for chemistry and code.<br />
+                    It is a microcontroller programmed to facilitate note taking and experiment analysis in
+                    laboratories.<br />
+                    Programmed in Java and C/C++, the Raspberry Pi is the GUI while the Arduino collects data using
+                    various
+                    lab
+                    instruments.
+                    <br />
+                    <br />
+                  </div>
+                  <div class="slds=col slds-size_1-of-2">
+                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                      style="font-size:15px">
+                      "AMBER14 MD Analyzer"&nbsp;
+                      <span class="slds-icon_container slds-icon-utility-new_window"
+                        title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Description of icon when needed</span>
+                      </span>
+                    </h1>
+                    <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /><br /><br />
+                    <a href="http://ambermd.org/index.php">AMBER</a> "is a suite of biomolecular simulation
+                    programs."<br />
+                    It produces large datasets that are unwieldy and troublesome to analyze by hand.<br />
+                    In college, we used this program to help analyze some of the datasets produced by our
+                    experiments.</br>
+                    We published two papers in the Journal of Dispersion Science using some of these results.
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                </div>
+                <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-2">
+                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                      style="font-size:15px">
+                      This Page!&nbsp;
+                      <span class="slds-icon_container slds-icon-utility-new_window"
+                        title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Description of icon when needed</span>
+                      </span>
+                    </h1>
+                    <img src="https://img.icons8.com/color/48/000000/salesforce.png" />
+                    <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+                    <img src="https://img.icons8.com/color/48/000000/css3.png" />
+                    <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+                    <img src="https://img.icons8.com/ios/50/000000/jquery-filled.png" /><br /><br />
+                    Front-end development is not my specialty. I was very nervous to even attempt building this from
+                    scratch.<br />
+                    I like the styling and CSS that Salesforces uses for its products, so I thought I could leverage
+                    that
+                    using
+                    the Lightning Design System.<br />
+                    I also don't like to overcomplicate things, so I chose not to use any "advanced" frameworks like
+                    React
+                    or
+                    Angular.<br />
+                  </div>
+                  <div class="slds-col slds-size_1-of-2">
+                    <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                      style="font-size:15px">
+                      Coming Soon . . .&nbsp;
+                      <span class="slds-icon_container slds-icon-utility-new_window"
+                        title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon-text-default slds-icon_x-small" aria-hidden="true">
+                          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Description of icon when needed</span>
+                      </span>
+                    </h1>
+                    <img src="https://img.icons8.com/color/48/000000/python.png" />
+                    <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="content-id-03" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
+              aria-labelledby="indicator-id-03">
+              <div class="slds-carousel__content">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:25px">
+                  Carrier Pigeon Alternatives
+                </h1><br />
+                <p class="slds-text-heading_small">By visiting this tab, I hope that means you'll reach out to
+                  me!<br /><br />
+                  I am always open to meeting and networking with new people.</p><br />
+                <div class="slds-align_absolute-center">
+                  <a href="mailto:kevbkraus@gmail.com">
+                    <img src="https://img.icons8.com/color/100/000000/gmail.png" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/kevin-krause-131664105/">
+                    <img src="https://img.icons8.com/color/100/000000/linkedin.png" />
+                  </a>
+                  <a href="https://github.com/KBKrause">
+                    <img src="https://img.icons8.com/material-rounded/100/000000/github.png" />
+                  </a>
+                  <a href="https://success.salesforce.com/ProfileView?u=0053A00000Dwt10QAB">
+                    <img src="https://img.icons8.com/color/100/000000/salesforce.png" />
+                  </a>
+                </div>
+                <br />
+                <p class="slds-text-heading_small">If your preferred communication channel is not listed above, please
+                  send
+                  me an email.</p><br />
+              </div>
+            </div>
+
+            <!-- SKILLS ACCORDION -->
+            <div id="content-id-04" class="slds-carousel__panel" role="tabpanel" aria-hidden="true"
+              aria-labelledby="indicator-id-04">
+              <div class="slds-carousel__content">
+                <h1 class="slds-tile__title slds-truncate slds-text-title_caps slds-align_absolute-center"
+                  style="font-size:25px">
+                  What do I know?
+                </h1><br />
+                <p class="slds-text-heading_small">These are the languages, technologies, and other skills I have
+                  am most familiar with.</p>
+                <br /><br />
+                <ul class="slds-accordion">
+                  <li class="slds-accordion__list-item">
+                    <section id="accordion-languages" class="slds-accordion__section slds-is-open">
+                      <div class="slds-accordion__summary">
+                        <h3 class="slds-accordion__summary-heading">
+                          <button aria-controls="accordion-details-01" aria-expanded="true"
+                            class="slds-button slds-button_reset slds-accordion__summary-action">
+                            <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                              aria-hidden="true">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                            </svg>
+                            <span class="slds-truncate" onclick="openAccordionOne();">Programming
+                              Languages, Frameworks, and Related Skills</span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="slds-accordion__content" id="accordion-details-01">
+                        <div class="slds-grid">
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" /><br />
+                            Java (Core Java)
+                          </div>
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" /><br />
+                            C++</div>
+                          <div class="slds-col slds-size_1-of-4"><img class="standard-img"
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/1200px-C_Sharp_wordmark.svg.png" /><br />
+                            C# / ASP.NET
+                          </div>
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/html-5.png" />
+                            <img src="https://img.icons8.com/color/96/000000/css3.png" />
+                            <img src="https://img.icons8.com/color/96/000000/javascript.png" /><br />
+                            Web Development (HTML, CSS, Bootstrap, Javascript, jQuery)</div>
+                        </div>
+                        <div class="slds-grid">
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/api-settings.png" />
+                            <br />
+                            RESTful APIs, System Integration
+                          </div>
+                          <div class="slds-col slds-size_1-of-4">
+                            <img src="https://img.icons8.com/color/96/000000/database.png"><br />
+                            SQL (MySQL, SQLite, Microsoft, Oracle)
+                          </div>
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/git.png" /><br />
+                            Git (Github, Gitlab, Bitbucket)
+                          </div>
+                          <div class="slds-col slds-size_1-of-4">
+                            <img src="https://img.icons8.com/color/96/000000/synchronize.png"><br />
+                            Continuous Integration/Delivery (Maven, Bitbucket Pipelines)
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+                  <li class="slds-accordion__list-item">
+                    <section id="accordion-frameworks" class="slds-accordion__section">
+                      <div class="slds-accordion__summary">
+                        <h3 class="slds-accordion__summary-heading">
+                          <button aria-controls="accordion-details-02" aria-expanded="false"
+                            class="slds-button slds-button_reset slds-accordion__summary-action">
+                            <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                              aria-hidden="true">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                            </svg>
+                            <span class="slds-truncate" onclick="openAccordionTwo();">"Soft"
+                              Skills and Methodologies</span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="slds-accordion__content" id="accordion-details-02">
+                        <div class="slds-grid">
+                          <div class="slds-col slds-size_1-of-4">
+                            Consulting
+                          </div>
+                          <div class="slds-col slds-size_1-of-4">
+                            Agile Delivery (Scrum, Kanban)
+                          </div>
+                          <div class="slds-col slds-size_1-of-4">
+                            Quality Assurance (Black box, smoke testing)
+                          </div>
+                          <div class="slds-col slds-size_1-of-4">
+                            Team-oriented
+                          </div>
+                        </div>
+                    </section>
+                  </li>
+                  <li class="slds-accordion__list-item">
+                    <section id="accordion-products" class="slds-accordion__section">
+                      <div class="slds-accordion__summary">
+                        <h3 class="slds-accordion__summary-heading">
+                          <button aria-controls="accordion-details-03" aria-expanded="false"
+                            class="slds-button slds-button_reset slds-accordion__summary-action">
+                            <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left"
+                              aria-hidden="true">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                            </svg>
+                            <span class="slds-truncate" onclick="openAccordionThree();">Products</span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="slds-accordion__content" id="accordion-details-03">
+                        <div class="slds-grid">
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/100/000000/salesforce.png" /><br />
+                            Salesforce
+                          </div>
+                          <div class="slds-col slds-size_1-of-4"><img class="standard-img"
+                              src="http://seekvectorlogo.com/wp-content/uploads/2018/11/mulesoft-vector-logo-small.png" /><br />
+                            Mulesoft
+                          </div>
+                          <div class="slds-col slds-size_1-of-4"><img
+                              src="https://img.icons8.com/color/96/000000/firebase.png" /><br />
+                            Firebase
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <!-- CAROUSEL FOOTER BUTTONS -->
+          <ul class=" slds-carousel__indicators" role="tablist">
+            <li class="slds-carousel__indicator" role="presentation">
+              <a onclick="showTabOne();" id="indicator-id-01" class="slds-carousel__indicator-action slds-is-active"
+                role="tab" tabindex="0" aria-selected="true" aria-controls="content-id-01">
+              </a>
+            </li>
+            <li class="slds-carousel__indicator" role="presentation">
+              <a onclick="showTabTwo();" id="indicator-id-02" class="slds-carousel__indicator-action" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="content-id-02">
+              </a>
+            </li>
+            <li class="slds-carousel__indicator" role="presentation">
+              <a onclick="showTabThree();" id="indicator-id-03" class="slds-carousel__indicator-action" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="content-id-03">
+              </a>
+            </li>
+            <li class="slds-carousel__indicator" role="presentation">
+              <a onclick="showTabFour();" id="indicator-id-04" class="slds-carousel__indicator-action" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="content-id-04">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="slds-align_absolute-center">
+        <p>Non-Salesforce LDS icons provided by&nbsp;<a href="https://icons8.com/">icons8.</a></p>
+      </div>
+      <br />
+      <div class="slds-align_absolute-center">
+        <p>The lightning design system used on this page is copyright (c) 2015-present, Salesforce.com, Inc. - All
+          rights
+          reserved.</p>
+      </div>
     </div>
-  </div>
-  <br />
-  <div class="slds-align_absolute-center">
-    <p>Non-Salesforce LDS icons provided by&nbsp;<a href="https://icons8.com/">icons8.</a></p>
-  </div>
-  <br />
-  <div class="slds-align_absolute-center">
-    <p>The stylesheets used on this page are copyright (c) 2015-present, Salesforce.com, Inc. - All rights
-      reserved.</p>
   </div>
 </body>
 
