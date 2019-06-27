@@ -14,6 +14,8 @@ $(document).ready(function () {
 });
 
 function showTabN(n) {
+  currentSelection = n;
+
   $("#tab-default-" + n + "__item").parent().attr(
     "class", "slds-tabs_default__item slds-is-active");
   $("#tab-default-" + n).attr(
@@ -23,7 +25,7 @@ function showTabN(n) {
   // Hide the unselected tabs
   for (iter = 1; iter <= numSelections; iter++) {
 
-    if (iter === currentSelection)
+    if (iter == currentSelection)
       continue;
     else {
       $("#tab-default-" + iter + "__item").parent().attr(
@@ -36,37 +38,35 @@ function showTabN(n) {
 
   selectCarouselN(n);
 
-  if (n === '1') {
+  if (n == '1') {
     $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
   }
-  else if (n === '2') {
+  else if (n == '2') {
     $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-100%)");
   }
-  else if (n === '3') {
+  else if (n == '3') {
     $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-200%)");
   }
-  else if (n === '4') {
+  else if (n == '4') {
     $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-300%)");
   }
-
-  currentSelection = n;
 }
 
 function selectCarouselN(n) {
-  $("#content-id-" + n).attr("aria-hidden", "false");
-  $("#content-id-" + n).children().eq(0).attr("tabindex", "0");
-  $("#indicator-id-" + n).attr("class", "slds-carousel__indicator-action slds-is-active");
-  $("#indicator-id-" + n).attr("tabindex", "0");
+  $("#content-id-0" + n).attr("aria-hidden", "false");
+  $("#content-id-0" + n).children().eq(0).attr("tabindex", "0");
+  $("#indicator-id-0" + n).attr("class", "slds-carousel__indicator-action slds-is-active");
+  $("#indicator-id-0" + n).attr("tabindex", "0");
 
   for (iter = 1; iter <= numSelections; iter++) {
 
-    if (iter === currentSelection)
+    if (iter == currentSelection)
       continue;
     else {
-      $("#content-id-" + iter).attr("aria-hidden", "true");
-      $("#content-id-" + iter).children().eq(0).attr("tabindex", "-1");
-      $("#indicator-id-" + iter).attr("class", "slds-carousel__indicator-action");
-      $("#indicator-id-" + iter).attr("tabindex", "-1");
+      $("#content-id-0" + iter).attr("aria-hidden", "true");
+      $("#content-id-0" + iter).children().eq(0).attr("tabindex", "-1");
+      $("#indicator-id-0" + iter).attr("class", "slds-carousel__indicator-action");
+      $("#indicator-id-0" + iter).attr("tabindex", "-1");
     }
   }
 }
