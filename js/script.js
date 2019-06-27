@@ -1,4 +1,5 @@
-let currentSelection = '1';
+let currentTabSelection = '1';
+let currentAccordionSelection = '1';
 const numSelections = 4;
 
 // Typed.js won't work till DOM loaded
@@ -14,7 +15,7 @@ $(document).ready(function () {
 });
 
 function showTabN(n) {
-  currentSelection = n;
+  currentTabSelection = n;
 
   $("#tab-default-" + n + "__item").parent().attr(
     "class", "slds-tabs_default__item slds-is-active");
@@ -25,7 +26,7 @@ function showTabN(n) {
   // Hide the unselected tabs
   for (iter = 1; iter <= numSelections; iter++) {
 
-    if (iter == currentSelection)
+    if (iter == currentTabSelection)
       continue;
     else {
       $("#tab-default-" + iter + "__item").parent().attr(
@@ -38,6 +39,7 @@ function showTabN(n) {
 
   selectCarouselN(n);
 
+  // TODO This could be consolidated.
   if (n == '1') {
     $("#CAROUSEL_SLIDER").attr("style", "transform:translateX(-0%)");
   }
@@ -60,7 +62,7 @@ function selectCarouselN(n) {
 
   for (iter = 1; iter <= numSelections; iter++) {
 
-    if (iter == currentSelection)
+    if (iter == currentTabSelection)
       continue;
     else {
       $("#content-id-0" + iter).attr("aria-hidden", "true");
@@ -75,6 +77,7 @@ function autoplay() {
   $("#CAROUSEL_AUTOPLAY").attr("aria-pressed", "true");
 }
 
+// TODO This could be consolidated.
 function openAccordionOne() {
   $("#accordion-frameworks").attr("class", "slds-accordion__section");
   $("#accordion-products").attr("class", "slds-accordion__section");
